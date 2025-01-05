@@ -142,7 +142,7 @@ def main():
     
     # Load data
     try:
-        df = pd.read_csv(r"C:\Users\rohit\Downloads\archive\tested.csv")  # Update with your path
+        df = pd.read_csv(r"tested.csv")  # Update with your path
         vectordb, data_processor = build_vectorstore(df, openai_api_key)
         qa_chain = build_qa_chain(vectordb, openai_api_key)
     except Exception as e:
