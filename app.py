@@ -1,4 +1,29 @@
 import os
+import subprocess
+import sys
+
+# Function to install a package
+def install_package(package):
+    try:
+        __import__(package)
+    except ImportError:
+        print(f"Installing {package}...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Install required packages
+install_package("python-dotenv")
+install_package("langchain")
+install_package("openai")
+install_package("faiss-cpu")
+install_package("pandas")
+install_package("plotly")
+install_package("numpy")
+install_package("scikit-learn")
+install_package("matplotlib")
+install_package("rich")
+install_package("torch")
+install_package("transformers")
+import os
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.embeddings import OpenAIEmbeddings
