@@ -54,6 +54,7 @@ dataclasses-json==0.6.7
 dataset==1.6.2
 datasets==3.0.1
 debugpy==1.8.7
+dotenv
 decorator==5.1.1
 Deprecated==1.2.15
 dill==0.3.8
