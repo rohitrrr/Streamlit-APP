@@ -1,5 +1,4 @@
 streamlit
-python-dotenv
 langchain
 openai
 faiss-cpu
@@ -11,16 +10,3 @@ matplotlib
 rich
 torch
 transformers
-typing
-tqdm
-regex
-requests
-aiohttp
-yarl
-dataclasses
-pydantic
-tenacity
-packaging
-mypy-extensions
-typing-inspect
-typing-extensions
